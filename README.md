@@ -1,3 +1,5 @@
+**Disclaimer**: This project was 'vibe-coded' with the help of CoPilot AI as an experiment of what AI is capable of with minimal guidance. DO NOT use these scripts in production without thoroughly reviewing them first.
+
 # Deployment Scripts
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
