@@ -1,36 +1,5 @@
 # Deployment Scripts
 
-This folder contains two scripts to run commands on multiple remote hosts via SSH:
-
-- `run_remote_command.ps1` — PowerShell implementation (Windows native). Requires `ssh`/`scp` in PATH.
-- `run_remote_command_enhanced.sh` — Bash implementation (WSL, Git Bash or POSIX shell). Requires `ssh`/`scp`.
-- `hosts.txt` — Example hosts file (one host per line; supports `user@host`).
-
-Both scripts provide the same feature set:
-
-- Key-based authentication (`-KeyFile` for PowerShell, `--key` for bash).
-- Optional file transfer: copy a local file to each host before executing the command (`-LocalFile`/`--local-file`) and specify the remote destination (`-RemotePath`/`--remote-path`).
-- Dry-run mode to preview scp/ssh commands without executing them.
-- Verbose mode to print command lines being executed.
-- Per-host stdout/stderr logs written into a `logs/` folder in the working directory.
-- Summary CSV with Host, Target, StartTime, DurationSeconds, ExitCode, Success, OutFile, ErrFile.
-- Retries with exponential backoff and full jitter for transient failures on scp/ssh.
----
-
-## Readme structure
-
-1. Flags and parameters for both scripts
-2. Examples
-3. Expected log output and summary CSV format
-4. Security notes and tips
-5. Next steps / improvements
-
----
-
-## 1) Flags and parameters
-
-# Deployment Scripts
-
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Shell](https://img.shields.io/badge/shell-Bash%20%7C%20PowerShell-orange.svg)
 
