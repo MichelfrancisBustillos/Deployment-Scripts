@@ -1,0 +1,7 @@
+# Example hosts list
+# Lines starting with # are ignored
+# You can specify user@host per line, otherwise the -u default user is used
+
+host1.example.com
+admin@host2.example.com
+10.0.0.5
